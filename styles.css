@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.list {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bookStyle {
+    display: flex;
+    justify-content: center;
+    width: calc(100% / 4);
+}
+
+.book-image-style {
+    width: 90%;
+}
+
+.background {
+    background: linear-gradient(0deg, #e2d4d35e,#e2d4d35e), url("photofon.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+.background-content {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.background-title {
+    padding-top: 23%;
+    color: #ff6a0093;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.taglin {
+    padding-top: 17%;
+    font-weight: 300;
+    font-size: 26px;
+    color: white;
+    padding-bottom: 5%;
+    line-height: 1.4;
+    text-shadow: 3px 4px 4px rgb(0, 0, 0);
+    animation: taglinAnimation 3s linear 0s 1 normal none;
+}
+
+@keyframes taglinAnimation {
+	0% {
+		opacity: 0;
+		transform: translateX(-900px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.background-button {
+    margin-bottom: 5%;
+    padding: 20px 20px 20px 20px;
+    font-size: 18px;
+    border: none;
+    box-shadow: 1px 1px 5px 1px #cbb6a5;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    color: #a27464;
+    width: 25%;
+}
+
+.background-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+#bookSave {
+    margin-bottom: 5%;
+    padding: 10px 10px 10px 10px;
+    font-size: 16px;
+    border: none;
+    box-shadow: 1px 1px 5px 1px #cbb6a5;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 300;
+    color: #a27464;
+    width: 20%; 
+    margin-top: 0.5%;
+    margin-left: 2%;
+}
+
+.booksSave {
+    display: flex;
+    justify-content: space-between;
+}
+
+.propertiesNewBook {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputStyle {
+    border: 1px solid #cbb6a5; 
+    border: none;
+    padding: 10px 10px 10px 10px;
+    border-radius: 7px;
+    margin-top: 5px;
+    padding-left: 1%;
+    width: 20%;
+    height: 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    margin-left: 1%;
+    color: #b65814fe;
+    cursor: pointer;
+}
+
+.inputStyle:focus {
+    border: 2px solid #a27464;
+    outline: 0;
+    outline-offset: 0;
+    background-color: #f0e5d7;
+}
+
+#bookSave:focus {
+    color: black;
+    background-color: #a27464;
+}
+
+.background-button:focus {
+    color: black;
+    background-color: #a27464;
+}
+
+.background-button:hover {
+    background-color: #e2d4d3;
+}
+
+#bookSave:hover {
+    background-color: #e2d4d3;
+}
+
+.book-button:hover {
+
+    background-color: rgb(213, 15, 15);
+    color: white;
+}
+
+.book-button:focus {
+    color: black;
+    background-color: #a27464;
+}
+
+.inputStyle:first-child {
+    margin-left: 0%;
+}
+
+.content-books {
+    background-color: #f0e5d7;
+}
+
+.novelties-title {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: 26px;
+    color: #ff6a0093;
+    text-shadow: 1px 1px 1px rgb(104, 103, 103);
+}
+
+.book {
+    background-color: white;
+    width: calc(85%);
+    margin-bottom: 15%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px #cbb6a5;
+}
+
+.book-image {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.book-title {
+    padding-top: 7%;
+    padding-bottom: 7%;
+    text-align: center;
+    font-size: 18px;
+    color: #6e463c;
+}
+
+.book-year {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: 16px;
+    color: #e2d4d3;
+}
+
+.book-author {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: 16px;
+    color: #bd9d77;
+}
+
+.book-buttons {
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-button {
+    width: 60%;
+    padding: 8px 8px 8px 8px;
+    font-size: 14px;
+    border: none;
+    box-shadow: 0px 1px 1px 0px #cbb6a5;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    color: #a27464;
+    margin-bottom: 3%;
+}
+
+.addModalWindow {
+    background-color: #e2d4d380;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.addModalContent {
+    background-color: white;
+    padding: 30px;
+}
+
+@media (max-width: 1024px) {
+    .background-title, .taglin {
+        padding-left: 2%;
+    }
+
+    .background-button {
+        margin-left: 2%;
+    }
+
+    .bookStyle {
+        width: calc(100% / 3);
+        flex-wrap: wrap;
+    }
+
+    .book {
+        width: 85%;
+    }
+
+    .propertiesNewBook {
+        flex-wrap: wrap;
+        margin-left: 2%;
+    }
+
+    #bookSave {
+        margin-top: 5%;
+        margin-left: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .taglin {
+        font-size: 24px;
+    }
+
+    .background-title, .taglin {
+        padding-left: 2%;
+    }
+
+    .background-button {
+        padding: 10px 10px 10px 10px;
+        font-size: 16px;
+        width: 30%;
+        margin-left: 2%;
+    }
+
+    .propertiesNewBook {
+        flex-wrap: wrap;
+        max-width: 70%;
+        margin-left: 1.5%;
+    }
+
+    .inputStyle {
+        width: 40%;
+        margin-top: 1.5%;
+    }
+
+    .inputStyle:first-child {
+        margin-left: 1%;
+    }
+
+    #bookSave {
+        width: 40%;
+        margin-left: 1.5%;
+        margin-top: 5%;
+        margin-left: 30%;
+    }
+
+    #list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bookStyle {
+        width: calc(100% / 2);
+    }
+}
+
+@media (max-width: 700px){
+    .bookStyle {
+        width: calc(80%);
+    }
+}
+
+@media (max-width: 600px){
+    .inputStyle {
+        width: 70%;
+        margin-top: 1.5%;
+    }
+
+    .propertiesNewBook {
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .background-buttons {
+        flex-direction: row;
+        margin-left: 15%;
+    }
+
+    .background-button {
+        width: 40%;
+    }
+
+    #bookSave {
+        margin-top: 5%;
+    }
+}
